@@ -5,6 +5,8 @@ spring:
     bootstrap-servers: 193.123.255.210:9092
     template:
       default-topic: test2
+    consumer:
+      group-id: abcde
   application:
     name: InsertADB
   datasource:

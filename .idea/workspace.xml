@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9d17c98-2a01-49d1-a34f-95b77f9b9e33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/oracle/tao/dao/VideoJsonDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/oracle/tao/service/VideoJsonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/oracle/tao/service/impl/VideoJsonServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/VideoJson.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/oracle/tao/controller/SendMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oracle/tao/controller/SendMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/oracle/tao/dao/OracleDao.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/oracle/tao/kafka/KafkaConsumerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/oracle/tao/kafka/KafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oracle/tao/kafka/KafkaConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties123" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/oracle/tao/kafka/KafkaProducerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oracle/tao/kafka/KafkaProducerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +41,9 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.oracle.tao.kafka" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\workspace_idea\Kafka" />
     </key>
@@ -87,7 +84,7 @@
       <workItem from="1615865052892" duration="8669000" />
       <workItem from="1615971217764" duration="88000" />
       <workItem from="1616242346970" duration="194000" />
-      <workItem from="1616475531741" duration="4760000" />
+      <workItem from="1616475531741" duration="7081000" />
     </task>
     <servers />
   </component>
@@ -103,37 +100,37 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1616475728922" />
-    <state width="1877" height="291" key="GridCell.Tab.0.bottom" timestamp="1616480157451">
+    <state width="1877" height="291" key="GridCell.Tab.0.bottom" timestamp="1616480316270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="291" key="GridCell.Tab.0.bottom/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1616480157451" />
-    <state width="1877" height="291" key="GridCell.Tab.0.center" timestamp="1616480157451">
+    <state width="1877" height="291" key="GridCell.Tab.0.bottom/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1616480316270" />
+    <state width="1877" height="291" key="GridCell.Tab.0.center" timestamp="1616480316270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="291" key="GridCell.Tab.0.center/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1616480157451" />
-    <state width="1877" height="291" key="GridCell.Tab.0.left" timestamp="1616480157450">
+    <state width="1877" height="291" key="GridCell.Tab.0.center/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1616480316270" />
+    <state width="1877" height="291" key="GridCell.Tab.0.left" timestamp="1616480316270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="291" key="GridCell.Tab.0.left/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1616480157450" />
-    <state width="1877" height="291" key="GridCell.Tab.0.right" timestamp="1616480157451">
+    <state width="1877" height="291" key="GridCell.Tab.0.left/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1616480316270" />
+    <state width="1877" height="291" key="GridCell.Tab.0.right" timestamp="1616480316270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="291" key="GridCell.Tab.0.right/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1616480157451" />
-    <state width="1877" height="291" key="GridCell.Tab.1.bottom" timestamp="1616480157452">
+    <state width="1877" height="291" key="GridCell.Tab.0.right/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1616480316270" />
+    <state width="1877" height="291" key="GridCell.Tab.1.bottom" timestamp="1616480316270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="291" key="GridCell.Tab.1.bottom/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1616480157452" />
-    <state width="1877" height="291" key="GridCell.Tab.1.center" timestamp="1616480157451">
+    <state width="1877" height="291" key="GridCell.Tab.1.bottom/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1616480316270" />
+    <state width="1877" height="291" key="GridCell.Tab.1.center" timestamp="1616480316270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="291" key="GridCell.Tab.1.center/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1616480157451" />
-    <state width="1877" height="291" key="GridCell.Tab.1.left" timestamp="1616480157451">
+    <state width="1877" height="291" key="GridCell.Tab.1.center/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1616480316270" />
+    <state width="1877" height="291" key="GridCell.Tab.1.left" timestamp="1616480316270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="291" key="GridCell.Tab.1.left/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1616480157451" />
-    <state width="1877" height="291" key="GridCell.Tab.1.right" timestamp="1616480157452">
+    <state width="1877" height="291" key="GridCell.Tab.1.left/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1616480316270" />
+    <state width="1877" height="291" key="GridCell.Tab.1.right" timestamp="1616480316270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="291" key="GridCell.Tab.1.right/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1616480157452" />
+    <state width="1877" height="291" key="GridCell.Tab.1.right/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1616480316270" />
   </component>
 </project>
