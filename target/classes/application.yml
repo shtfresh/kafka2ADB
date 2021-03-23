@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  kafka:
+    bootstrap-servers: 193.123.255.210:9092
+    template:
+      default-topic: test2
+  application:
+    name: InsertADB
+  datasource:
+    # 当前数据源操作类型
+    type: com.alibaba.druid.pool.DruidDataSource
+    # mysql驱动类
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@db202103151034_low?TNS_ADMIN=C:/test/Wallet_toyota2
+    username: toyota
+    password: WElcome##123
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+#  type-aliases-package: com.oracle.tao.bean
